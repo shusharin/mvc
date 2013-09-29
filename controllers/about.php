@@ -7,6 +7,9 @@ class About {
     }
     
     public function other() {
-        echo 'function other!';
+        echo 'function other! <br>';
+        
+        require 'models/about_model.php';
+        $model = new About_Model();
     }
 }
